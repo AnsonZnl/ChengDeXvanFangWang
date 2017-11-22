@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!--<title>Document</title> 关键字增加所搜性-->
+    <title>承德选房网-租房</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!--移动端<meta name="keywords" content="">-->
+    <!--<meta name="keywords" content="">content="123"给网站关键字增加所搜性-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--做移动端一定要加他.支持手机端的neta标签<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!--为了能更好的显示
+    <!这是为了让网站优先兼容最高版本的ie浏览器 -->
+    <!-- <meta http-equiv="x-ua-compatible" content="ie=edge">-->
+    <!-- CSS -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap-3.2.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+<!--header-->
+<header>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">承德 <span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">不限</a></li>
+                            <li><a href="#">双桥区</a></li>
+                            <li><a href="#">双滦区</a></li>
+                            <li><a href="#">开发区</a></li>
+                            <li><a href="#">围场县</a></li>
+                            <li><a href="#">丰宁县</a></li>
+                            <li><a href="#">兴隆县</a></li>
+                            <li><a href="#">平泉县</a></li>
+                            <li><a href="#">承德县</a></li>
+                            <li><a href="#">营子区</a></li>
+                            <li><a href="#">隆化县</a></li>
+                            <li><a href="#">宽城县</a></li>
+                            <li><a href="#">滦平县</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../首页/index.html">首页</a></li>
+                    <li><a href="#">买房</a></li>
+                    <li><a href="../卖房/meifang.html">卖房</a></li>
+                    <li class="active"><a href="#">租房</a></li>
+                    <li><a href="#">家居装修</a></li>
+                    <li><a href="#">业主论坛</a></li>
+                    <li><a href="#">商家入驻</a></li>
+
+                </ul>
+                <!--<form class="navbar-form navbar-left" role="search">-->
+                <!--<div class="form-group">-->
+                <!--<input type="text" class="form-control" placeholder="Search">-->
+                <!--</div>-->
+                <!--<button type="submit" class="btn btn-default">Submit</button>-->
+                <!--</form>-->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">移动app<span
+                            class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><img class="appsao" src="images/登录二维码.jpg" alt=""></li>
+                        </ul>
+
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle denluyezi" data-toggle="dropdown">登陆 <span
+                                class="caret"></span></a>
+                        <div class="denluye">
+                            <div class="tupiandw">
+                                <img class="xwei" src="images/小二维码_02.png" alt="">
+                                <img class="dwei" src="images/登录二维码.jpg" alt="">
+                            </div>
+                            <h3 class="text-center">会员登录</h3>
+                            <p>
+                                <input type="Radio" name="denlu" value="会员" checked>普通登录
+                                <input type="Radio" name="denlu" value="普通" style="margin-left: 70px">手机动态登录
+                            </p>
+                            <p class="ip" style="margin-top: 10px;"><input class="renwu" type="text"
+                                                                           placeholder="用户名/手机号/邮箱"></p>
+                            <p class="ip"><input class="suo" type="text" placeholder="密码"></p>
+                            <p class="zid"><input type="checkbox" checked="checked">自动登录 <a href="#" id="zhmm"> 找回密码</a>
+                                <span><a href="">免费注册</a></span></p>
+                            <p class="denluerzi"><a href="#" class="linh">登录</a></p>
+                            <p class="denimg"><a href=""><img src="images/qqwei_07.png" alt=""></a></p>
+                            <p class="denluhuizhu"><a href="#" id="huiyvan" class="linh">会员注册</a></p>
+                            <p class="denluerfabu"><a href="#" class="linh" id="nav-fabu">我的发布</a></p>
+                        </div>
+                    </li>
+                    <li><a href="../登录注册/zhuce.html">注册</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="nav-logo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-1">
+                    <a href="" class="logoa"><img src="images/logo.jpg" alt=""></a>
+                </div>
+                <div class="col-md-5"></div>
+                <div class="col-md-5">
+                    <ul>
+                        <li><a href="" style="border:none;">会员中心</a></li>
+                        <li><a href="">我要发布</a></li>
+                        <li><a href="">订单查询</a></li>
+                        <li><a href="">广告位招聘</a></li>
+                        <li><a href="">房产百科</a></li>
+                    </ul>
+                    <div class="shousuo">
+                        <input type="text" placeholder="请输入房产信息( 楼盘或小区)">
+                        <a href="">搜索</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--回到顶部-->
+<p id="back-to-top">
+    <a href="#top">
+        <img src="images/pic.png" alt="">
+    </a>
+</p>
+
+
+<div class="border">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 bor-but"></div>
+        </div>
+    </div>
+    <div class="container border-items">
+        <div class="row">
+            <div class="col-md-12">
+                <span>区域:</span>
+                <a href="" class="bor-a">不限</a>
+                <a href="#">双桥区</a>
+                <a href="#">双滦区</a>
+                <a href="#">开发区</a>
+                <a href="#">围场区</a>
+                <a href="#">丰宁县</a>
+                <a href="#">兴隆县</a>
+                <a href="#">平泉县</a>
+                <a href="#">承德县</a>
+                <a href="#">营子区</a>
+                <a href="#">隆化县</a>
+                <a href="#">宽城县</a>
+                <a href="#">滦平县</a>
+            </div>
+            <div class="col-md-12">
+                <span>租金:</span>
+                <a href="" class="bor-a">不限</a>
+                <a href="#">500元</a>
+                <a href="#">以下500-1000元</a>
+                <a href="#">1000-1500元</a>
+                <a href="#">1500-2000元</a>
+                <a href="#">2000-3000元</a>
+                <a href="#">3000-4000元</a>
+                <a href="#">4000-5000元</a>
+                <a href="#">5000元以上</a>
+            </div>
+            <div class="col-md-12">
+                <span>房型:</span>
+                <a href="" class="bor-a">不限</a>
+                <a href="#">一居</a>
+                <a href="#">二居</a>
+                <a href="#">三居</a>
+                <a href="#">四居</a>
+                <a href="#">四居以上</a>
+            </div>
+            <div class="col-md-12">
+                <span>方式:</span>
+                <a href="" class="bor-a">不限</a>
+                <a href="#">整租</a>
+                <a href="#">合租</a>
+            </div>
+            <div class="col-md-12" style="border: none;">
+                <span>更多筛选:</span>
+                <a href="" class="bor-a">不限</a>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">房屋类型 <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">全部</a></li>
+                        <li><a href="#">普通住宅</a></li>
+                        <li><a href="#">公寓</a></li>
+                        <li><a href="#">别墅</a></li>
+                        <li><a href="#">平房</a></li>
+                        <li><a href="#">酒店公寓</a></li>
+                        <li><a href="#">商住两用</a></li>
+                        <li><a href="#">其他</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">装修 <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">全部</a></li>
+                        <li><a href="#">毛坯</a></li>
+                        <li><a href="#">简单装修</a></li>
+                        <li><a href="#">中等装修</a></li>
+                        <li><a href="#">精装修</a></li>
+                        <li><a href="#">豪华装修</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">朝向 <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">全部</a></li>
+                        <li><a href="#">朝南</a></li>
+                        <li><a href="#">朝北</a></li>
+                        <li><a href="#">朝东</a></li>
+                        <li><a href="#">朝西</a></li>
+                    </ul>
+                </li>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 bor-top">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="" style=background:#9b0505;">全部</a>
+                        <a href="">个人房源</a>
+                        <a href="">经纪人房源</a>
+                    </div>
+                    <div class="col-md-4"></div>
+
+                    <div class="col-md-4">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">默认排序 <span
+                                class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">价格<span
+                                class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">面积<span
+                                class="caret"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 main-cnt">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="" class="btn-block"><img class="img-thumbnail" src="images/s_left.jpg" alt=""></a>
+                    </div>
+                    <div class="col-md-6 main-cent">
+                        <h4><a href="">上城浩林园 精装四居室好房源好户型 房主诚心出租...</a></h4>
+                        <ul>
+                            <li><a href="" style="border:none;">整租</a></li>
+                            <li><a href="">3室2厅</a></li>
+                            <li><a href="">137 ㎡</a></li>
+                            <li><a href="">精装修</a></li>
+                            <li><a href="">（中层） /共29层</a></li>
+                            <li><a href="">朝南</a></li>
+                        </ul>
+                        <p><a href="">双桥区-天山海世界-子睿天和</a></p>
+                        <p><a href="">来自经纪人：于海平</a></p>
+                        <p><a href="">据西二环联盟路口公交站约729米</a></p>
+                        <p><a href="" class="o1">随时入住</a><a href="" class="o2">家电齐全</a><a href="" class="o3">交通便利</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 main-right">
+                        <p><strong>1000</strong>元/月</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 main-cnt">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="" class="btn-block"><img class="img-thumbnail" src="images/main_1.jpg" alt=""></a>
+                    </div>
+                    <div class="col-md-6 main-cent">
+                        <h4><a href="">围场县二街北雁商城峰景家园 43平米1室1厅1卫.</a></h4>
+                        <ul>
+                            <li><a href="" style="border:none;">整租</a></li>
+                            <li><a href="">1室1厅</a></li>
+                            <li><a href="">43 ㎡</a></li>
+                            <li><a href="">精装修</a></li>
+                            <li><a href="">（中层） /共25层</a></li>
+                            <li><a href="">朝南</a></li>
+                        </ul>
+                        <p><a href="">围场县-二街北雁商城-峰景家园</a></p>
+                        <p><a href="">一天前更新 个人房源</a></p>
+                        <p><a href="">县一中东侧200米</a></p>
+                        <p><a href="" class="o1">随时入住</a><a href="" class="o2">家电齐全</a><a href="" class="o3">交通便利</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 main-right">
+                        <p><strong>2000</strong>元/月</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 main-cnt">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="" class="btn-block"><img class="img-thumbnail" src="images/main_2.jpg" alt=""></a>
+                    </div>
+                    <div class="col-md-6 main-cent">
+                        <h4><a href="">双桥区富华商贸城鸿坤御花园 42平米1室1厅1卫</a></h4>
+                        <ul>
+                            <li><a href="" style="border:none;">整租</a></li>
+                            <li><a href="">1室1厅</a></li>
+                            <li><a href="">42 ㎡</a></li>
+                            <li><a href="">精装修</a></li>
+                            <li><a href="">（高层） /共20层</a></li>
+                            <li><a href="">朝南北</a></li>
+                        </ul>
+                        <p><a href="">双桥区-双桥区-鸿坤御花园</a></p>
+                        <p><a href="">来自经纪人：李家即</a></p>
+                        <p><a href="">据石洞子沟公交站约100米。</a></p>
+                        <p><a href="" class="o1">随时入住</a><a href="" class="o2">家电齐全</a><a href="" class="o3">交通便利</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 main-right">
+                        <p><strong>800</strong>元/月</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 main-cnt">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="" class="btn-block"><img class="img-thumbnail" src="images/main_3.jpg" alt=""></a>
+                    </div>
+                    <div class="col-md-6 main-cent">
+                        <h4><a href="">港湾花园 1室1厅1卫-37平米</a></h4>
+                        <ul>
+                            <li><a href="" style="border:none;">整租</a></li>
+                            <li><a href="">1室1厅</a></li>
+                            <li><a href="">37 ㎡</a></li>
+                            <li><a href="">中装修</a></li>
+                            <li><a href="">（低层） /共20层</a></li>
+                            <li><a href="">朝西</a></li>
+                        </ul>
+                        <p><a href="">开发区-大学城-港湾花园</a></p>
+                        <p><a href="">来自经纪人：何华</a></p>
+                        <p><a href="">大石庙偏岭交警支队东侧港湾花园</a></p>
+                        <p><a href="" class="o1">随时入住</a><a href="" class="o2">家电齐全</a><a href="" class="o3">交通便利</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 main-right">
+                        <p><strong>700</strong>元/月</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 main-cnt">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="" class="btn-block"><img class="img-thumbnail" src="images/main_4.jpg" alt=""></a>
+                    </div>
+                    <div class="col-md-6 main-cent">
+                        <h4><a href="">世纪城小区2室1厅-78平米</a></h4>
+                        <ul>
+                            <li><a href="" style="border:none;">整租</a></li>
+                            <li><a href="">2室1厅</a></li>
+                            <li><a href="">78 ㎡</a></li>
+                            <li><a href="">精装修</a></li>
+                            <li><a href="">（低层） /共20层</a></li>
+                            <li><a href="">朝南北</a></li>
+                        </ul>
+                        <p><a href="">双桥区-双百购物-承德-世纪城</a></p>
+                        <p><a href="">三天前更新 个人房源</a></p>
+                        <p><a href="">承德市双桥区迎宾路1号</a></p>
+                        <p><a href="" class="o1">随时入住</a><a href="" class="o2">家电齐全</a><a href="" class="o3">交通便利</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 main-right">
+                        <p><strong>1250</strong>元/月</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 main-cnt">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="" class="btn-block"><img class="img-thumbnail" src="images/main_7.jpg" alt=""></a>
+                    </div>
+                    <div class="col-md-6 main-cent">
+                        <h4><a href="">清水湾1室1厅1卫-38平米</a></h4>
+                        <ul>
+                            <li><a href="" style="border:none;">整租</a></li>
+                            <li><a href="">1室1厅</a></li>
+                            <li><a href="">38 ㎡</a></li>
+                            <li><a href="">精装修</a></li>
+                            <li><a href="">（中层） /共10层</a></li>
+                            <li><a href="">朝南</a></li>
+                        </ul>
+                        <p><a href="">滦平县-被雁商城-清水湾</a></p>
+                        <p><a href="">来自经纪人：王贺</a></p>
+                        <p><a href="">据南岗区东大直街92号</a></p>
+                        <p><a href="" class="o1">随时入住</a><a href="" class="o2">家电齐全</a><a href="" class="o3">交通便利</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 main-right">
+                        <p><strong>800</strong>元/月</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 main-cnt">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="" class="btn-block"><img class="img-thumbnail" src="images/main_5.jpg" alt=""></a>
+                    </div>
+                    <div class="col-md-6 main-cent">
+                        <h4><a href="">南园小区2室1厅1卫-80平米</a></h4>
+                        <ul>
+                            <li><a href="" style="border:none;">整租</a></li>
+                            <li><a href="">2室1厅1卫</a></li>
+                            <li><a href="">80 ㎡</a></li>
+                            <li><a href="">精装修</a></li>
+                            <li><a href="">（中层） /共29层</a></li>
+                            <li><a href="">朝南</a></li>
+                        </ul>
+                        <p><a href="">双桥区-天山海世界-子睿天和</a></p>
+                        <p><a href="">三天前更新 个人房源</a></p>
+                        <p><a href="">双桥区魁星路东侧</a></p>
+                        <p><a href="" class="o1">随时入住</a><a href="" class="o2">家电齐全</a><a href="" class="o3">交通便利</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 main-right">
+                        <p><strong>1050</strong>元/月</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 main-cnt">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="" class="btn-block"><img class="img-thumbnail" src="images/main_6.jpg" alt=""></a>
+                    </div>
+                    <div class="col-md-6 main-cent">
+                        <h4><a href="">中心大街1室1厅1卫-38平米</a></h4>
+                        <ul>
+                            <li><a href="" style="border:none;">整租</a></li>
+                            <li><a href="">1室1厅</a></li>
+                            <li><a href="">38 ㎡</a></li>
+                            <li><a href="">精装修</a></li>
+                            <li><a href="">（中层） /共20层</a></li>
+                            <li><a href="">朝南</a></li>
+                        </ul>
+                        <p><a href="">双滦区-双塔山-中心大街</a></p>
+                        <p><a href="">来自经纪人：白佳明</a></p>
+                        <p><a href="">双桥区武烈路附近</a></p>
+                        <p><a href="" class="o1">随时入住</a><a href="" class="o2">家电齐全</a><a href="" class="o3">交通便利</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 main-right">
+                        <p><strong>1000</strong>元/月</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 main-cnt">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="" class="btn-block"><img class="img-thumbnail" src="images/main_8.jpg" alt=""></a>
+                    </div>
+                    <div class="col-md-6 main-cent">
+                        <h4><a href="">上城浩林园 精装四居室好房源好户型 房主诚心出租...</a></h4>
+                        <ul>
+                            <li><a href="" style="border:none;">整租</a></li>
+                            <li><a href="">3室2厅</a></li>
+                            <li><a href="">137 ㎡</a></li>
+                            <li><a href="">精装修</a></li>
+                            <li><a href="">（中层） /共29层</a></li>
+                            <li><a href="">朝南</a></li>
+                        </ul>
+                        <p><a href="">双桥区-天山海世界-子睿天和</a></p>
+                        <p><a href="">来自经纪人：于海平</a></p>
+                        <p><a href="">据西二环联盟路口公交站约729米。</a></p>
+                        <p><a href="" class="o1">随时入住</a><a href="" class="o2">家电齐全</a><a href="" class="o3">交通便利</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 main-right">
+                        <p><strong>1000</strong>元/月</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 main-cnt">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="" class="btn-block"><img class="img-thumbnail" src="images/main_9.jpg" alt=""></a>
+                    </div>
+                    <div class="col-md-6 main-cent">
+                        <h4><a href="">文化大厦纯正办公楼110平包取暖物业年租6万</a></h4>
+                        <ul>
+                            <li><a href="" style="border:none;">整租</a></li>
+                            <li><a href="">4室1厅</a></li>
+                            <li><a href="">155 ㎡</a></li>
+                            <li><a href="">中装修</a></li>
+                            <li><a href="">（中层） /33层</a></li>
+                            <li><a href="">朝南</a></li>
+                        </ul>
+                        <p><a href="">双桥区-迎宾路-文化大厦</a></p>
+                        <p><a href="">来自经纪人：刘宝才</a></p>
+                        <p><a href="">双桥区迎宾路木兰中路东50米</a></p>
+                        <p><a href="" class="o1">随时入住</a><a href="" class="o2">家电齐全</a><a href="" class="o3">交通便利</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 main-right">
+                        <p><strong>4100</strong>元/月</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 main-cnt">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="" class="btn-block"><img class="img-thumbnail" src="images/main_10.jpg" alt=""></a>
+                    </div>
+                    <div class="col-md-6 main-cent">
+                        <h4><a href="">公园里小区1室1厅1卫-40平米</a></h4>
+                        <ul>
+                            <li><a href="" style="border:none;">整租</a></li>
+                            <li><a href="">1室1厅</a></li>
+                            <li><a href="">40 ㎡</a></li>
+                            <li><a href="">中装修</a></li>
+                            <li><a href="">（低层） /共20层</a></li>
+                            <li><a href="">朝东南</a></li>
+                        </ul>
+                        <p><a href="">平泉县-府前街-公园里</a></p>
+                        <p><a href="">一天前更新 个人房源</a></p>
+                        <p><a href="">平泉县府前路与101国道交汇处</a></p>
+                        <p><a href="" class="o1">随时入住</a><a href="" class="o2">家电齐全</a><a href="" class="o3">交通便利</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 main-right">
+                        <p><strong>1000</strong>元/月</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 main-cnt">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="" class="btn-block"><img class="img-thumbnail" src="images/main_11.jpg" alt=""></a>
+                    </div>
+                    <div class="col-md-6 main-cent">
+                        <h4><a href="">安居小区2室1厅1卫-81平米</a></h4>
+                        <ul>
+                            <li><a href="" style="border:none;">整租</a></li>
+                            <li><a href="">1室1厅</a></li>
+                            <li><a href="">81 ㎡</a></li>
+                            <li><a href="">中装修</a></li>
+                            <li><a href="">（中层） /共15层</a></li>
+                            <li><a href="">朝南</a></li>
+                        </ul>
+                        <p><a href="">兴隆县-东大街</a></p>
+                        <p><a href="">来自经纪人：于海平</a></p>
+                        <p><a href="">兴隆县东大街与育红路交叉口西行100米</a></p>
+                        <p><a href="" class="o1">随时入住</a><a href="" class="o2">家电齐全</a><a href="" class="o3">交通便利</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 main-right">
+                        <p><strong>1200</strong>元/月</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 main-cnt">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="" class="btn-block"><img class="img-thumbnail" src="images/main_3.jpg" alt=""></a>
+                    </div>
+                    <div class="col-md-6 main-cent">
+                        <h4><a href="">御水花园1室1厅1卫-39平米</a></h4>
+                        <ul>
+                            <li><a href="" style="border:none;">整租</a></li>
+                            <li><a href="">1室1厅</a></li>
+                            <li><a href="">39 ㎡</a></li>
+                            <li><a href="">精装修</a></li>
+                            <li><a href="">（中层） /共20层</a></li>
+                            <li><a href="">朝南</a></li>
+                        </ul>
+                        <p><a href="">双滦区-秀水大街-御水花园</a></p>
+                        <p><a href="">一天前更新 个人房源</a></p>
+                        <p><a href="">双滦区御水花园小区203号楼</a></p>
+                        <p><a href="" class="o1">随时入住</a><a href="" class="o2">家电齐全</a><a href="" class="o3">交通便利</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 main-right">
+                        <p><strong>700</strong>元/月</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="pagination pagination-lg">
+            <li class="disabled"><a href="#">&laquo;</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
+            <li><a href="#">8</a></li>
+            <li><a href="#">9</a></li>
+            <li><a href="#">10</a></li>
+            <li><a href="#">11</a></li>
+            <li><a href="#">12</a></li>
+            <li><a href="#">13</a></li>
+            <li><a href="#">14</a></li>
+            <li><a href="#">15</a></li>
+            <li><a href="#">16</a></li>
+            <li><a href="#">17</a></li>
+            <li><a href="#">18</a></li>
+            <li><a href="#">19</a></li>
+            <li><a href="#">20</a></li>
+            <!--<li><a href="#">21</a></li>-->
+            <li><a href="#">...</a></li>
+            <li><a href="#">&raquo;</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<footer>
+    <div class="footer-top">
+        <div class="container">
+            <h4><a href="">友情链接</a>|<a href="">相关信息</a><span style="float:right;"><a href="">申请友情链接</a>|<a href="">交换友情链接</a></span>
+            </h4>
+            <p><a href="#">承德新闻网</a> <a href="#">张家口房天下</a> <a href="#">承德我的工作网</a> <a href="#">承德列表网</a> <a href="#">承德信息网</a>
+                <a href="#">承德信息分类网</a> <a href="#">承德百姓网 </a> <a href="#">承德赶集网</a> <a href="#">承德旅游网</a> <a href="#">承德爱装网</a>
+                <a href="#">承德招聘网</a> <a href="#">紫塞房产网</a> <a href="#">承德租房网</a> <a href="#">承德招聘</a> <a
+                        href="#">紫塞明网</a>
+                <a href="#">承德赶场网</a> <a href="#">承德房产信息网</a><a href="#"> 承德招聘信息网</a> <a href="#">承德教育信息网</a> <a
+                        href="#">承德房地产信息网</a> <a href="#">承德县教育局信息网 </a> <a href="#">承德二手房产信息网 </a> <a href="#">
+                    承德58同城</a> <a href="#">承德地图网</a> <a href="#">廊坊信息网</a> <a href="#">承德生活网</a> <a href="#">沧州新闻网</a>
+                <a href="#">承德搜狐焦点网</a> <a href="#">邯郸网</a> <a href="#">学校教育网</a> <a href="#">机械招聘网 </a><a
+                        href="#">衡水搜房网</a> <a href="#">承德旅游</a> <a href="#">郑州房产网</a> <a href="#">承德装修网</a> <a href="#">压力容器招聘网</a>
+                <a href="#">易展安防网</a> <a href="#">查字典文档网</a> <a href="#">襄阳二手房</a> <a href="#">张家口在线</a> <a href="#">承德公司黄页</a>
+                <a href="#">承德房产网</a> <a href="#">保定网</a><a href="#">石家庄信息网</a> <a href="#">承德民政信息网</a> <a href="#">承德市教育信息网</a>
+                <a href="#">承德县农经信息网</a>
+                <a href="#">承德信息网</a> <a href="#">承德紫塞房产信息网</a> <a href="#">承德市教育局信息网</a> <a href="#">承德租房信息网</a> <a
+                        href="#">承德卫生信息网</a> <a href="#">承德市房地产信息网</a> <a href="#">承德县教育信息网</a></p>
+        </div>
+    </div>
+    <div class="footer-but text-center">
+        <div class="container">
+            <p>安全联盟认证</p>
+            <ul>
+                <li><a href="">关于选房网</a></li>
+                <li><a href="">我要推广</a></li>
+                <li><a href="">我要删除信息 </a></li>
+                <li><a href=""> 帮助中心</a></li>
+                <li><a href="">招贤纳士 </a></li>
+                <li><a href="">联系我们 </a></li>
+            </ul>
+            <p></p>
+            <p>©2017 承德选房网 冀ICP备**********号-12 增值电信业务经营许可证*2-2******* 冀公网安备******* 互联网房产信息服务资格证书</p>
+        </div>
+
+    </div>
+</footer>
+
+
+<!--jquery-->
+<script src="js/jquery-1.11.1.js"></script>
+<!--Bootstrap JavaScrrit-->
+<script src="bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+<!--JavaScript-->
+<script src="js/main.min.js"></script>
+</body>
+</html>
